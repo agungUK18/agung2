@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Transaksi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Formulir Transaksi</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Produk</a>
+    <a href="transaksi.html">Transaksi</a>
+    <a href="tentang.html">Tentang Kami</a>
+  </nav>
+
+  <main>
+    <form onsubmit="return validateForm()">
+      <label>Nama Pembeli:</label>
+      <input type="text" name="nama" required /><br />
+
+      <label>Alamat:</label>
+      <textarea name="alamat" required></textarea><br />
+
+      <label>Produk:</label>
+      <select>
+        <option value="Smartphone">Smartphone</option>
+        <option value="Laptop">Laptop</option>
+      </select><br />
+
+      <label>Jumlah:</label>
+      <input type="number" name="jumlah" min="1" required /><br />
+
+      <label>Metode Pembayaran:</label>
+      <input type="radio" name="pembayaran" value="COD" checked /> COD
+      <input type="radio" name="pembayaran" value="Transfer" /> Transfer Bank<br />
+
+      <button type="submit">Kirim</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; Agung Electro</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
